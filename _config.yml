@@ -1,0 +1,7 @@
+markdown: rdiscount
+permalink: /:title.html
+multiviews: true
+haml: true
+sass: true
+rdiscount extensions: [smart]
+exclude: [ .gitignore, README.md, Gemfile, Gemfile.lock, Procfile, vendor ]

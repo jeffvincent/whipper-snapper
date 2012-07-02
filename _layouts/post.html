@@ -1,0 +1,14 @@
+---
+layout: base
+---
+<div class='content'>
+  <div id='post'>
+    <div class='title_and_date'>
+      <h1>{{ page.title }}</h1>
+      <span class='date'>{{ page.date | date: "%B %d, %Y" }}</span>
+    </div>
+    <div class='post_content'>
+      {{ content }}
+    </div>
+  </div>
+</div>

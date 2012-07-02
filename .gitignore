@@ -1,0 +1,7 @@
+_site/*
+*.gem
+pkg/
+*.swp
+.bundle/
+.DS_Store
+.sass-cache/

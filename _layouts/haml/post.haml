@@ -1,0 +1,11 @@
+\---
+layout: base
+\---
+
+.content
+  #post
+    .title_and_date
+      %h1 {{ page.title }}
+      %span.date {{ page.date | date: "%B %d, %Y" }}
+    .post_content
+      {{ content }}
