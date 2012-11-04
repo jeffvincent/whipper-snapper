@@ -9,5 +9,5 @@ gem "heroku", "~> 2.28.7"
 gem 'rack-jekyll', :git => 'https://github.com/adaoraul/rack-jekyll.git'
 gem "unicorn", "~> 4.3.1"
 gem "rdiscount"
-gem "ZURB-foundation"
+gem "zurb-foundation", :git => "git@github.com:zurb/foundation.git"
 gem "foreman"
