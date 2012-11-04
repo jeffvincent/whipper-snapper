@@ -3,9 +3,11 @@ layout: base
 \---
 
 .content
-  #post
-    .title_and_date
-      %h1 {{ page.title }}
-      %span.date {{ page.date | date: "%B %d, %Y" }}
-    .post_content
-      {{ content }}
+  #post.twelve.columns
+    .row
+      .title_and_date.nine.columns.offset-by-one
+        %h1 {{ page.title }}
+        %span.date {{ page.date | date: "%B %d, %Y" }}
+    .row
+      .post_content.twelve.columns
+        {{ content }}
