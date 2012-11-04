@@ -8,9 +8,12 @@
     %title
       / this page needs a title!
   %body
-    #container
-      #header
-        %h1
-          / insert main site title
-      #section
-        {{ content }}
+    .row
+      #container.twelve.columns
+        .row
+          #header.nine.columns.offset-by-one.center-content
+            %h1
+              / insert main site title
+        .row
+          #section.nine.columns.offset-by-one.center-content
+            {{ content }}
