@@ -3,21 +3,28 @@
   <head>
     <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
     <meta content='Your Name' name='author' />
+    <link href='/stylesheets/app.scss' rel='stylesheet' type='text/css' />
     <link href='/stylesheets/screen.css' rel='stylesheet' type='text/css' />
     <title>
-      <!-- needs a title! -->
+      <!-- this page needs a title! -->
     </title>
   </head>
   <body>
-    <div id='container'>
-      <header>
-        <h1>
-          <!-- main site title! -->
-        </h1>
-      </header>
-      <section>
-        {{ content }}
-      </section>
+    <div class='row'>
+      <div class='twelve columns' id='container'>
+        <div class='row'>
+          <div class='nine columns offset-by-one center-content' id='header'>
+            <h1>
+              <!-- insert main site title -->
+            </h1>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='nine columns offset-by-one center-content' id='section'>
+            {{ content }}
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
