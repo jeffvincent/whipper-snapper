@@ -32,7 +32,7 @@ end
 
 desc "Build the site"
 task :build => :pre_jekyll do
-  system "bundle exec jekyll"
+  system "bundle exec jekyll build"
 end
 
 desc "Deploy latest code in _site to production"
@@ -48,6 +48,7 @@ end
 # add a title to a post like np title="Blah this is my title"
 desc "Create a new blog post"
 task :np do
+  require 'date'
 
   title = ENV["title"] || "new-post"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
@@ -68,6 +69,8 @@ task :np do
       post.puts "---"
     end
   end
+
+  system "mvim #{path}"
 
   exit 1
 
