@@ -1,15 +1,15 @@
-source "https://rubygems.org"
-ruby "1.9.3"
+source 'https://rubygems.org'
+ruby '1.9.3'
 
-gem "jekyll", "~> 1.0.0"
-gem "sass"
-gem "haml"
-gem "compass"
-gem "RedCloth"
-gem "heroku", "~> 2.28.7"
+gem 'jekyll', '~> 1.0.0'
+gem 'sass'
+gem 'haml'
+gem 'compass'
+gem 'RedCloth'
+gem 'heroku', '~> 2.28.7'
 gem 'rack-jekyll', '~> 0.4.1'
-gem "unicorn", "~> 4.3.1"
-gem "rdiscount", :git => "https://github.com/sunaku/rdiscount.git"
-gem "ZURB-foundation"
-gem "foreman"
-gem "gemoji"
+gem 'unicorn', '~> 4.3.1'
+gem 'rdiscount', :git => 'https://github.com/sunaku/rdiscount.git'
+gem 'zurb-foundation', '~> 4.3.0'
+gem 'foreman'
+gem 'gemoji'
